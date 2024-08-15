@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./yes_style.css">
+</head>
+
+<body onload="playMusic()">
+    <div class="container">
+        <div>
+            <h1 class="header_text">BAILO DE EMOCIÓN &#10084 &#127881!!</h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif" alt="Cute animated illustration">
+        </div>
+    </div>
+
+    <audio id="myAudio" autoplay>
+        <source src="baile de emocion.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById("myAudio");
+            audio.play().catch(function(error) {
+                console.error("Error al reproducir el audio:", error);
+            });
+        }
+    </script>
+</body>
+
+</html>
